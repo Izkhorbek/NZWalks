@@ -20,6 +20,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 // Interfase injection 
 // Inject Regions Repository
 builder.Services.AddScoped<IRepositoryRegions, RepositoryRegions>();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

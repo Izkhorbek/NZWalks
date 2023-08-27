@@ -12,7 +12,9 @@ namespace NZWalks.API.Repository.Implementation
         {
             this.appDbContext = appDbContext;
         }
-        public async Task<IEnumerable<Region>> GetAll()
+
+         
+        public async Task<IEnumerable<Region>> GetAllAsync()
         {
            return await appDbContext.Regions.ToListAsync();  
         }
