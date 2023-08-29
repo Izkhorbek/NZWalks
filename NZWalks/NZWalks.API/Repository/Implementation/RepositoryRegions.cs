@@ -17,7 +17,8 @@ namespace NZWalks.API.Repository.Implementation
          
         public async Task<IEnumerable<Region>> GetAllAsync()
         {
-           return await appDbContext.Regions.ToListAsync();  
+           return await appDbContext.Regions
+                .ToListAsync();  
         }
 
         public async Task<Region>  GetbyId(Guid Id)

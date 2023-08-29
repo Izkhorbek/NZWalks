@@ -10,7 +10,7 @@
         public Guid WalkDifficultyId { get; set; }
 
         //// Navigation to other Models
-        public WalkDifficulty WalkDifficulty { get; set; }
         public Region Region { get; set; }
+        public WalkDifficulty WalkDifficulty { get; set; }
     }
 }

@@ -1,10 +1,9 @@
 ﻿using NZWalks.API.Models.Domain;
 
-namespace NZWalks.API.Models.DTO
+namespace NZWalks.API.View
 {
-    public class WalkDto
+    public class AddRequestWalk
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public double Length { get; set; }
 
@@ -12,7 +11,7 @@ namespace NZWalks.API.Models.DTO
         public Guid WalkDifficultyId { get; set; }
 
         //// Navigation to other Models
-        public Region Region { get; set; }
-        public WalkDifficulty WalkDifficulty { get; set; }
+        //public Region Region { get; set; }
+        //public WalkDifficulty WalkDifficulty { get; set; }
     }
 }
