@@ -21,6 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 // Inject Regions Repository
 builder.Services.AddScoped<IRepositoryRegions, RepositoryRegions>();
 builder.Services.AddScoped<IRepositoryWalk, RepositoryWalk>();
+builder.Services.AddScoped<IRepositoryWalkDifficulty, RepositoryWalkDifficulty>();
 
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
